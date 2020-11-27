@@ -151,3 +151,17 @@ img {
     font-size: 20px;
     font-weight: bold;
 }
+
+/* STATS */
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.cli .grid > *:first-child {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
