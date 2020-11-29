@@ -55,10 +55,58 @@
     border: 1px solid #fff;
 }
 
+/* Backgrounds and buttons colors*/
+.bg-primary, .btn--primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary, .btn--secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-dark, .btn--dark {
+    background-color: var(--dark-gray);
+    color: #fff;
+}
+
+.bg-light, .btn--light {
+    background-color: var(--light-gray);
+    color: #fff;
+}
+
+.bg-dark a, .btn--dark a, 
+.bg-primary a, .btn--primary a, 
+.bg-secondary a, .btn--secondary a {
+    color: #fff;
+}
+
 /* TEXT */
 .text-center {
     text-align: center;
 }
+
+.lead {
+    font-size: 20px;
+}
+
+.text-sm {
+    font-size: 1rem;
+}
+
+.text-md {
+    font-size: 2rem;
+}
+
+.text-lg {
+    font-size: 3rem;
+}
+
+.text-xl {
+    font-size: 4rem;
+}
+
 
 /* SPACING */
 .my-1 {
@@ -179,4 +227,13 @@
 
 .px-5 {
     padding: 0 4rem;
+}
+
+/* !!! MEDIA QUERIES !!! */
+
+/* Mobile */
+@media(max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
 }
