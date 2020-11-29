@@ -2,8 +2,10 @@
 
 :root {
     --primary-color: #2563EB;
+    --secondary-color: #1E40AF;
+    --dark-color:#0C4A6E    ;
     --light-gray: #F5F5F5;
-    --dark-gray: #27272A;
+    --dark-gray:#0F172A;
 }
 
 * {
@@ -87,7 +89,6 @@ img {
     grid-template-columns: 55% 45%;
     gap: 30px;
     overflow: visible;
-    padding: 3px;
     font-size: 16px;
 }
 
@@ -164,4 +165,120 @@ img {
     grid-row: 1 / 3;
     border-radius: 5px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* CLOUD */
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+/* LANGUAGES */
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card img {
+    max-width: 80px;
+}
+
+.languages .card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* FOOTER */
+.footer {
+    padding: 4rem 0;
+}
+
+.footer .social a {
+    margin: 0 10px;
+}
+
+/* !!! MEDIA QUERIES !!! */
+
+
+@media(max-width: 992px) {
+    .showcase-form {
+        width: 100%;
+    }
+}
+/* Tablets and under */
+@media(max-width: 768px) {
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid, 
+    .cloud .grid,
+    .footer .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase {
+        height: auto;
+    }
+
+    .showcase-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+        width: 400px;
+    }
+
+    .cli .grid {
+        gap: 15px;
+    }
+
+    .cli .grid > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .cli .card {
+        margin: 10px 0;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 2rem 0;
+    }
+}
+
+/* Mobile */
+@media(max-width: 576px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, .1);
+    }
+
+    .showcase-form {
+        width: 100%;
+    }
 }
