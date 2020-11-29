@@ -72,8 +72,8 @@
 }
 
 .bg-light, .btn--light {
-    background-color: var(--light-gray);
-    color: #fff;
+    background-color: #fff;
+    color: var(--gray-dark);
 }
 
 .bg-dark a, .btn--dark a, 
@@ -109,6 +109,10 @@
 
 
 /* SPACING */
+.mt-4 {
+    margin-top: 3rem;
+}
+
 .my-1 {
     margin: 1rem 0;
 }
