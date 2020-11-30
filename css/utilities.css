@@ -26,6 +26,11 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
 /* COMPONENTS */
 .card {
     background-color: #fff;
