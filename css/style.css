@@ -218,16 +218,16 @@ code, pre {
     animation: slideFromRight 0.7s ease-in;
 }
 
-.features-subhead img {
+.features-subhead img, .success img {
     width: 300px;
     animation: slideFromLeft 0.7s ease-in;
 }
 
-.features-head .features-text, .docs-head .docs-text {
+.features-head .features-text, .docs-head .docs-text{
     animation: slideFromLeft 0.7s ease-in;
 }
 
-.features-subhead .features-text {
+.features-subhead .features-text, .success-text {
     animation: slideFromRight 0.7s ease-in;
 }
 
@@ -270,6 +270,14 @@ code, pre {
     font-weight: bold;
     color: var(--primary-color);
 }
+
+/**/
+.success {
+    background-color: var(--primary-color);
+    height: 100vh;
+    color: #fff;
+}
+
 
 /* FOOTER */
 .footer {
